@@ -1,50 +1,35 @@
-body, html
+*
     margin: 0
     padding: 0
+    box-sizing: border-box
 
 body
+    background-color: #ffffff
     min-height: 100vh
-    background-color: #080808
 
-.background
-    background: radial-gradient(50% 50% at 50% 50%, rgba(49, 49, 49, 0.18) 0%, #00000055 100%)
-    min-height: 100vh
-    transition: background .1s linear
+.navbar
+    align-items: start
+    width: 250px
+    height: 100vh
+    position: fixed
+    margin-left: -300px
+    background-color: #130057
+    transition: 0.4s
 
-.bg-image
-    background-color: #000000c9
-    min-height: 10vh
+.nav-link
+    font-size: 1.25em
+    &:hover
+        background-color: #088bb3
+    &:focus
+        background-color: #258cbb
+    &:active
+        background-color: #1a2f8d
 
-aside
-    background-color: #525252
+.my-container
+    transition: 0.4s
 
-.content-inner1
-    height: 100px
-    background-color: #caf9ff
+.active-nav
+    margin-left: 0
 
-.content-inner2
-    height: 100px
-    background-color: #9fe9f3
-
-.blue
-    background-color: blue
-    padding: 30px
-    height: 150vh
-
-.grey
-    background-color: grey
-    max-width: 100%
-
-.hidden
-    display: none
-
-.cricle
-    width: 300px
-    height: 300px
-    margin: auto
-    background-color: #551568
-    position: relative
-    top: 200px
-    border-radius: 150px
-    filter: blur(1px);
-    transform: scale(1.1)
+.active-content
+    margin-left: 250px
